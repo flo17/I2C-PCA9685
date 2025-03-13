@@ -1,0 +1,13 @@
+{
+  "name": "I2C-PCA9685",
+  "apiVersion": "1.0.0",
+  "author": "flo17",
+  "version": "0.0.1",
+  "description": "High Level Analyzer for PCA9685 - I2C PWM Driver",
+  "extensions": {
+    "I2C-PCA9685": {
+      "type": "HighLevelAnalyzer",
+      "entryPoint": "I2C-PCA9685.Hla"
+    }
+  }
+}
