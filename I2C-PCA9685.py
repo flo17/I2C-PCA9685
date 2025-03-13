@@ -98,7 +98,7 @@ class Hla(HighLevelAnalyzer):
 
                 # If the data is a write to the LED register, process the data into sub-columns
                 if len(self.data_bytes) == 5:
-                    led_num = self.data_bytes[0] // 6 - 1
+                    led_num = (self.data_bytes[0] - 6) // 4
                     new_frame.data["LED"] = str(led_num)
                     new_frame.data["LEDX_ON_L"] = hex(self.data_bytes[1])
                     new_frame.data["LEDX_ON_H"] = hex(self.data_bytes[2])
